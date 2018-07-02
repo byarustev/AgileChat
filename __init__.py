@@ -1,0 +1,5 @@
+users = []
+comments = []
+logs = []
+moderators = []
+admins = []
