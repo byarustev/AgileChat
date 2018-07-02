@@ -1,4 +1,4 @@
-from user import User
+from .user import User
 # from comment import Comment
 # from log import Log
 first_prompt = """
@@ -26,5 +26,4 @@ if __name__ == "__main__":
 
             if answer == 1:
                 prompt1="Enter comment title"
-
 
