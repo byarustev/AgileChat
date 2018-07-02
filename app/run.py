@@ -1,4 +1,4 @@
-from .user import User
+from app.user import User
 # from comment import Comment
 # from log import Log
 first_prompt = """

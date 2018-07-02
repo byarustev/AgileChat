@@ -1,4 +1,4 @@
-from user import User
+from app.user import User
 
 users = [User(1, "tony", "Tonny", "123")]
 comments = []
