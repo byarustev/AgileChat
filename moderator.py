@@ -1,4 +1,4 @@
-class moderators:
+class Moderators:
     def __init__(self,moderator_id,moderator_name):
         self.moderator_id = moderator_id
         self.moderator_name = moderator_name
@@ -10,7 +10,7 @@ class moderators:
       
         
         
-         
+
         
     def delete_comment(self):
         pass
