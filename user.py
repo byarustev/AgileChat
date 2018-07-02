@@ -5,7 +5,8 @@ class User:
         self.name = name
         self.password = password
 
-    def login(self, username, password):
+    @staticmethod
+    def login(username, password):
         pass
 
     def create_comment(self, comment):
