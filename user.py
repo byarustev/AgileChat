@@ -1,4 +1,8 @@
 from AgileChat import users
+from AgileChat import comments
+from comment import Comment
+import time
+import datetime
 
 
 class User:
@@ -7,6 +11,7 @@ class User:
         self.username = username
         self.name = name
         self.password = password
+        self.comments_list = []
 
     @staticmethod
     def login(username, password):
@@ -28,13 +33,18 @@ class User:
         return True
 
     def create_comment(self, comment):
-        pass
+        curr_time = time.time()
+        timestamp = datetime.datetime.fromtimestamp(curr_time).strftime('%Y-%m-%d %H:%M:%S')
+        new_comment = Comment(len(self.comments_list),
+                              len(comments), self.user_id, comment, timestamp)
+        self.comments_list.append(new_comment)
+        comments.append(new_comment)
 
     def edit_my_comment(self, comment_id, user_id, user_type):
         pass
 
     def comments_list(self):
-        pass
+        return self.comments_list
 
     def my_comments_list(self):
         pass
